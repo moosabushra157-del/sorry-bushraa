@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+</head>
+
+<body>
+  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>For Bushraa ♡</title>
+<style>
+*{box-sizing:border-box}
+body{
+ margin:0;min-height:100vh;color:#fff5fc;
+ font-family:Georgia,serif;text-align:center;
+ background:radial-gradient(ellipse at top,#293b66,#11152e 55%,#090b19);
+ overflow-x:hidden
+}
+main{max-width:440px;margin:auto;padding:25px 22px 50px}
+.moon{font-size:65px;margin-top:48px;filter:drop-shadow(0 0 22px #fff1bb)}
+.tag{color:#e8b9d7;letter-spacing:3px;font:11px Arial;margin-top:35px}
+h1{font-size:43px;font-weight:normal;line-height:1.2}
+h1 span{color:#f5badb;font-style:italic}
+p{font:15px/1.9 Arial,sans-serif;color:#d0d2e7}
+.card{padding:23px;border:1px solid #ffffff22;background:#ffffff0b;
+ border-radius:22px;margin:25px 0;line-height:1.9}
+button{width:100%;padding:15px;border:0;border-radius:15px;
+ background:linear-gradient(110deg,#f8c2d9,#d5c7ff);
+ color:#281a32;font-size:15px;margin-top:12px;cursor:pointer}
+button.alt{background:#ffffff0d;border:1px solid #ffffff35;color:white}
+.page{display:none;animation:fade .6s}
+.page.active{display:block}
+@keyframes fade{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+.heart{font-size:40px;animation:pulse 1.5s infinite}
+@keyframes pulse{50%{transform:scale(1.15)}}
+.photos{display:grid;gap:13px}
+.photo{border-radius:18px;background:#ffffff0c;border:1px solid #ffffff22;padding:28px 12px}
+.photo img{width:100%;height:180px;object-fit:cover;border-radius:12px}
+.gifts{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.gift{padding:18px 8px;border:1px solid #ffffff22;border-radius:18px;background:#ffffff0c;font-size:28px}
+.msg{display:none;font:13px/1.8 Arial;color:#f6d9e9;padding:12px}
+.msg.show{display:block}
+footer{font:11px Arial;color:#a6aac7;margin-top:30px}
+</style>
+</head>
+<body>
+<main>
+<audio id="song" src="song.mp3" loop></audio>
+
+<section class="page active" id="p1">
+<div class="moon">☾</div>
+<div class="tag">A LITTLE LETTER FOR YOU</div>
+<h1>Hey,<br><span>Bushraa ♡</span></h1>
+<p>I made this little universe just for you.<br>
+There is something I want to say from my heart.</p>
+<div class="heart">♡</div>
+<button onclick="go(2)">Open my heart ✨</button>
+<button class="alt" onclick="music()">♫ Play music</button>
+</section>
+
+<section class="page" id="p2">
+<div class="tag">PLEASE READ THIS</div>
+<h1>I'm sorry,<br><span>Bushraa.</span></h1>
+<div class="card">
+I know I shouted at you and hurt you with the way I behaved.
+You didn't deserve that, and I am truly sorry. ♡<br><br>
+Even if I was upset, I should have spoken with kindness and respect.
+I won't make excuses for hurting you.<br><br>
+<strong>Your feelings matter to me.</strong>
+I'm sorry for making you feel this way.
+I will never repeat this again can you please forgive me one last time i am.your baby na? please.
+</div>
+<p>"You deserved gentleness from me." 🌷</p>
+<button onclick="go(3)">Our little memories →</button>
+<button class="alt" onclick="go(1)">← Back</button>
+</section>
+
+<section class="page" id="p3">
+<div class="tag">OUR LITTLE WORLD</div>
+<h1>Memories <span>♡</span></h1>
+<p>Add your favourite pictures in these spaces.</p>
+<div class="photos">
+<div class="photo">🌙<br><img src="memory1.jpg" onerror="this.style.display='none'" alt="Memory one"><p>One of my favourite moments</p></div>
+<div class="photo">🧸<br><img src="memory2.jpg" onerror="this.style.display='none'" alt="Memory two"><p>The little things I cherish</p></div>
+<div class="photo">✨<br><img src="memory3.jpg" onerror="this.style.display='none'" alt="Memory three"><p>More happy memories ahead</p></div>
+</div>
+<button onclick="go(4)">Your little surprises 🎁</button>
+<button class="alt" onclick="go(2)">← Back</button>
+</section>
+
+<section class="page" id="p4">
+<div class="tag">OPEN YOUR GIFTS</div>
+<h1>Just for <span>you ♡</span></h1>
+<p>Tap each gift for a little message.</p>
+<div class="gifts">
+<div class="gift" onclick="reveal(1)">💌<div style="font-size:12px">A letter</div></div>
+<div class="gift" onclick="reveal(2)">🧸<div style="font-size:12px">A hug</div></div>
+<div class="gift" onclick="reveal(3)">🌙<div style="font-size:12px">A promise</div></div>
+<div class="gift" onclick="reveal(4)">🌷<div style="font-size:12px">For you</div></div>
+</div>
+<div class="card">
+<div class="msg" id="m1">I'm sorry, Bushraa. I take responsibility for my words and actions. 💗</div>
+<div class="msg" id="m2">A gentle virtual hug, only if you want one. 🫂</div>
+<div class="msg" id="m3">I will work on pausing when upset and speaking respectfully.</div>
+<div class="msg" id="m4">Your feelings matter. You deserve kindness, always. 🌷</div>
+</div>
+<button onclick="go(5)">One last thing →</button>
+<button class="alt" onclick="go(3)">← Back</button>
+</section>
+
+<section class="page" id="p5">
+<div class="moon">🌙</div>
+<div class="tag">FROM MY HEART</div>
+<h1>Will you forgive me, <span>Bushraa?</span></h1>
+<div class="heart">💗</div>
+<div class="card">
+I'm truly sorry for hurting you.
+I care about you and want to do better, not just say the right words.<br><br>
+You can take all the time you need.
+I will respect your feelings and listen when you're ready.
+</div>
+<button onclick="reply(1)">Okay, let's talk ♡</button>
+<button class="alt" onclick="reply(2)">I need some time 🌙</button>
+<p id="answer"></p>
+<button class="alt" onclick="go(1)">Read it again ↺</button>
+</section>
+<div id="dots" style="margin-top:25px;color:#e9bbd9">● ○ ○ ○ ○</div>
+<footer>Made with a sincere apology ♡</footer>
+</main>
+
+<script>
+let current=1;
+function go(n){
+ current=n;
+ document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));
+ document.getElementById('p'+n).classList.add('active');
+ document.getElementById('dots').textContent=
+ Array.from({length:5},(_,i)=>i===n-1?'●':'○').join(' ');
+ window.scrollTo(0,0);
+}
+function reveal(n){
+ document.getElementById('m'+n).classList.toggle('show');
+}
+async function music(){
+ const s=document.getElementById('song');
+ try{
+  if(s.paused){await s.play()}else{s.pause()}
+ }catch(e){alert('Add song.mp3 to the project folder first.')}
+}
+function reply(n){
+ document.getElementById('answer').textContent=
+ n===1?'Thank you for being willing to talk. I will listen. ♡':
+ 'esa mt kro na jaan please baat krlo... 🌙';
+}
+</script>
+</body>
+</html>
+
+</body>
+
+</html>
